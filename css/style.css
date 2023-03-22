@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,700italic,400italic);
+
+* {
+    box-sizing: border-box;
+    font-size: 4vh;
+}
+body{
+    background: url(..//assets/images/wallpaper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Merriweather', serif;
+    line-height: 1.4;
+}
+html {
+    color: #fff;
+}
+.header{
+    padding: 15px 0px;
+
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo-content{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px dashed blue;
+}
+.logo-content :hover{
+    box-shadow: 0 0 20px 0 #FFFFFF inset, 0 0 20px 2px #FFFFFF;
+    border-radius: 50%;
+    animation: img-animate 4s linear infinite;
+}
+.emp-text{
+    font: normal normal bold 20px/25px Roboto;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-left: 20px;
+    color: #82a70c;
+    text-transform: uppercase;
+}
+.emp-payroll{
+    color: #fff;
+}
+.admin-logo{
+    display: flex;
+    flex-direction: row;
+}
+.admin-name{
+    font-size: 12px;
+    padding-top: 20px;
+    letter-spacing: 0px;
+    margin-left: 62%;
+    margin-top: 1%;
+    color: #fff;
+    text-transform: uppercase;
+}
+.admin-logo img{
+    margin-left: 4px;
+}
+hr.line{
+    border: 1px dotted #82a70c;
+}
+.main{
+    display: flex;
+    min-height: calc(100vh - 35vh);
+}
+.main > article{
+    flex: 1;
+}
+article h1 {
+     text-transform: uppercase;
+     color: white;
+     font-size: 4vw;
+     line-height: 1;
+     position: relative;
+     margin-top: 12%;
+     margin-left: 10%;
+}
+.main > nav{
+    flex: 0 0 15vw;
+    border-color: #82a70c;
+    border-style: none dotted none none;
+}
+.main > nav{
+    order: -1;
+}
+.nav-panel{
+   margin: 0;
+   padding: 0;
+}
+.nav-panel li a{
+    font: normal normal bold 10px/15px Roboto;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.nav-panel li a:link{
+    color: #fff;
+}
+.nav-panel li a:visited{
+    color: #82a70c;
+}
+.nav-panel li a:hover{
+    color: red;
+}
+header,footer,article,nav{
+    padding: 1em;
+}
+header, footer{
+    height: 20vh;
+}
+@keyframes img-animate{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg)
+	}
+}
