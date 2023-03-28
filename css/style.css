@@ -1,6 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald);
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,700italic,400italic);
-
 * {
     box-sizing: border-box;
     font-size: 4vh;
@@ -10,19 +7,19 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    font-family: 'Merriweather', serif;
     line-height: 1.4;
+    margin: 0;
 }
 html {
     color: #fff;
 }
 .header{
     padding: 15px 0px;
-
 }
 .header-content{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 .logo-content{
@@ -40,7 +37,7 @@ html {
     animation: img-animate 4s linear infinite;
 }
 .emp-text{
-    font: normal normal bold 20px/25px Roboto;
+    font: normal normal bold 20px/25px Montserrat;
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0px;
@@ -85,6 +82,158 @@ article h1 {
      position: relative;
      margin-top: 12%;
      margin-left: 10%;
+}
+.form-content{
+    min-height: calc(100% - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 80%;
+    padding: 10px 30px 20px 60px;
+    box-shadow: 0px 3px 6px #282828;
+    border: 1px solid #28282B;
+    border-radius: 8px;
+    opacity: 1;
+    background-image: url(../assets/images/form-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: 880px 630px;
+}
+.form-head{
+    display: flex; 
+    flex-direction: row;
+    font: normal normal bold 24px/35px Roboto;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 1;
+    padding-left: 200px;
+    padding-bottom: 20px;
+}
+.head-logo{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    box-shadow: 0 0 15px 0 #FFFFFF inset, 0 0 10px 2px #FFFFFF;
+    border-radius: 50%;
+}
+.head-logo:hover{
+    animation: img-animate 4s linear infinite;  
+}
+.row-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+.label{
+    width: 35%;
+    min-width: 14px;
+}
+.text{
+    font-size: 22px;
+    opacity: 1;
+    font-family: Roboto;
+    text-transform: uppercase;
+}
+.text-form
+{
+    font-size: 20px;
+    opacity: 1;
+    font-family: Roboto;
+    text-transform: capitalize;   
+}
+.box{
+    width: 65%;
+}
+.input{
+    width: 65%;
+    outline: none;
+    border: none;
+    margin: 8px 0;
+    padding:10px 0;
+    color: #FFFFFF;
+    background-color: black;
+    border-bottom: 1px solid #fff;
+    font-size: 22px;
+}
+.date{
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: #FFFFFF;
+    font-family: Roboto;
+    text-transform: uppercase;
+}
+.note{
+    width: 70%;
+    outline: none;
+    border: none;
+    margin: 8px 0;
+    padding:10px 0;
+    background-color: black;
+    border: 1px solid #fff;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+.profile-radio-content{
+    display: flex;
+    flex-direction: row;
+}
+.profile-radio-content > label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+.submit{
+    width: 150px;
+    background: rgb(19, 92, 4);
+    background: radial-gradient(circle,rgb(32, 207, 41) 0%,rgb(107, 245, 142)100%);
+    border-radius: 20px;
+    border: none;
+}
+.submit:hover{
+    color: #FFFFFF;
+    background: black;
+    box-shadow: 0 0 10px 0 #2fd889 inset, 0 0 10px 2px #35b435;
+    border: 1px solid #03610f;
+}
+.reset{
+    width: 150px;
+    background: rgb(10, 5, 39);
+    background: radial-gradient(circle,rgb(57, 7, 138) 0%,rgb(20, 108, 216)100%);
+    border-radius: 20px;
+    border: none;
+}
+.reset:hover{
+    color: #FFFFFF;
+    background: black;
+    box-shadow: 0 0 10px 0 #110266 inset, 0 0 10px 2px #7e40f1;
+    border: 1px solid blue;
+}
+.clear{
+    width: 150px;
+    background: rgb(199, 26, 13);
+    background: radial-gradient(circle,rgb(184, 68, 23) 0%,rgb(235, 150, 93)100%);
+    border-radius: 20px;
+    border: none;
+}
+.clear:hover{
+    color: #FFFFFF;
+    background: rgb(226, 41, 28);
+    box-shadow: 0 0 10px 0 #e9500a inset, 0 0 10px 2px #ee6f1b;
+    border: 1px solid rgb(235, 42, 8);
 }
 .main > nav{
     flex: 0 0 15vw;
