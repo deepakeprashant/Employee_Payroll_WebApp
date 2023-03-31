@@ -38,6 +38,7 @@
                         <label class="label text" for="name">Name </label>
                         <div class="box">
                             <input type="text" name="name" id="name" class="input" placeholder="Enter Your Name" required>
+                            <error-output class="text-error" for="error"></error-output>
                         </div>
                     </div>
                     <div class="row-content">
@@ -93,8 +94,6 @@
                                 <label class="text-form" for="hr">HR</label>
                                 <input class="checkbox" type="checkbox" id="sales" name="sales" value="Sales">
                                 <label class="text-form" for="sales">Sales</label>
-                                <input class="checkbox" type="checkbox" id="finance" name="finance" value="Finance">
-                                <label class="text-form" for="finance">Finance</label>
                                 <input class="checkbox" type="checkbox" id="others" name="others" value="Others">
                                 <label class="text-form" for="others">Others</label>
                             </div>
@@ -104,7 +103,7 @@
                         <label class="label text" for="salary">Choose your salary </label>
                         <div class="box">
                             <input class="input" type="range" id="salary" name="salary" 
-                            min="30000" max="50000" step="100" value="40000">
+                            min="10000" max="50000" step="100" value="40000">
                             <output class="salary-output text" for="salary">40000</output>
                         </div>
                     </div>
@@ -218,5 +217,6 @@
             </ul>
         </nav>  
     </div>
+    <script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>

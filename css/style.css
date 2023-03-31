@@ -147,6 +147,12 @@ label{
     font-family: Roboto;
     text-transform: capitalize;   
 }
+.text-error{
+    font-size: 12px;
+    font-family: Roboto;
+    color: red;
+    text-transform: capitalize;
+}
 .box{
     width: 65%;
 }
